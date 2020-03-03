@@ -35,7 +35,7 @@ export class SpotyServisService {
   getBuscar(palabrassss){
     
     const headers = new HttpHeaders({
-      'Authorization' : 'Bearer BQDdGGNtc1b_7S4SevbYlmZeAz5ioN0uuXEj8fajHSCiu3bZkeTAuxZi4Y1YgU4PU4TZpFYVgZEsJM58gdg'
+      'Authorization' : 'Bearer BQAK7w-KrpSt9cqjXDSY8AKTkfanwWjfu6ESmMSzjw_QRreHYipEoogO80SO_qptlojcuCZaS8bwsNPc50Q'
     });
     
     return this._http.get(`https://api.spotify.com/v1/search?query=${ palabrassss }&type=artist&offset=0&limit=20`, {headers});
