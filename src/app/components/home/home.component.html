@@ -1,0 +1,10 @@
+<div class="container card-columns pt-5">
+  <div class="row card-deck" *ngFor="let item of infoArray">
+    <div class="card">
+      <img src="{{ item.images[0].url }}" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <p class="card-text">{{ item.name }}</p>
+      </div>
+    </div>
+  </div>
+</div>

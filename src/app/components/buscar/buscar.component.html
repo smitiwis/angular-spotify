@@ -1,0 +1,18 @@
+
+<div class="container">
+    <form action="">
+        <input class="form-control" type="text" placeholder="Buscar"  (keyup)=buscar(input.value) #input>
+    </form>
+</div>
+
+<div class="container card-columns pt-5">
+    <div class="row card-deck" *ngFor="let item of buscarArray">
+      <div class="card">
+        <img src="{{ item.images[0].url }}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text">{{ item.name }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
