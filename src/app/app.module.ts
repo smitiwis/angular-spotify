@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { BuscarComponent } from './components/buscar/buscar.component';
 import { HeaderComponent } from './components/header/header.component';
+import { LoadingComponent } from './components/loading/loading.component';
 //SERVICIOS
 
 
@@ -16,7 +17,8 @@ import { HeaderComponent } from './components/header/header.component';
     AppComponent,
     HomeComponent,
     BuscarComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

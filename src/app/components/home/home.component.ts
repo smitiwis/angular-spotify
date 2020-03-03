@@ -7,11 +7,21 @@ import { SpotyServisService } from "../../servicio/spoty-servis.service";
   styleUrls: ["./home.component.css"]
 })
 export class HomeComponent {
+  cargar:boolean;
    infoArray:any = [];
+
   constructor(private _servicio:SpotyServisService) {
-    this._servicio.getAlbums().subscribe(respuesta => {
+    this.cargar=true;
+    this._servicio.getAlbums().subscribe((respuesta:any )=> {
       this.infoArray=respuesta.albums.items;
-      console.log(this.infoArray);
+      this.cargar=false;
+
     });
   }
+
+  
+
+
+
+
 }
